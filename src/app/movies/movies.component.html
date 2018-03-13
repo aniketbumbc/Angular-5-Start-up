@@ -19,7 +19,11 @@
 
 <h4>Implementation of Ng-Repeat</h4>
 <ol class="newMovies">
-<li class="movieItem" *ngFor= "let movie of  newmovies">
+<li class="movieItem"
+ *ngFor= "let movie of  newmovies"
+ [class.selected]="movie === selectedMovie"
+ (click)="onSelect(movie)"
+ >
 {{movie.name}} - {{movie.releaseYear}} - {{movie.status}}
 </li>
 </ol>
