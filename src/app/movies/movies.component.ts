@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../models/movies';
-
+import { newMovies } from '../New-Movie';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -13,6 +13,7 @@ export class MoviesComponent implements OnInit {
     releaseYear: 2004,
     status: 'Good'
   }
+  newmovies=newMovies;
   constructor() { }
 
   ngOnInit() {

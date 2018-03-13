@@ -3,3 +3,18 @@ color: chocolate;
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
 }
+
+.newMovies {
+background: rgb(42, 165, 89);
+padding: 0.5em 1em 0.5em 1.5em;
+margin: 1em;
+max-width: 16em;
+}
+.newMovies.movieItem{
+font-size: 0.87em;
+font-family:Georgia;
+background: rgb(55, 2, 179);
+padding: 0.3em;
+margin: 0.2em;
+text-align:left;
+}

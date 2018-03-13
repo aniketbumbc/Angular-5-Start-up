@@ -16,3 +16,10 @@
 
 <h3> Please Enter Movie Name </h3>  <input type="text" placeholder="Movie Name" [ngModel]="movie.name">
 <h3> Please Enter Movie Stattus </h3>  <input type="text" placeholder="Movie status" [(ngModel)]="movie.status">
+
+<h4>Implementation of Ng-Repeat</h4>
+<ol class="newMovies">
+<li class="movieItem" *ngFor= "let movie of  newmovies">
+{{movie.name}} - {{movie.releaseYear}} - {{movie.status}}
+</li>
+</ol>
