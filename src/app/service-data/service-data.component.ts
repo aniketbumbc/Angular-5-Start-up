@@ -9,13 +9,16 @@ import{Movie} from '../models/movies';
 })
 export class ServiceDataComponent implements OnInit {
 movies:Movie[];
-  constructor(private movieService:MovieService) { 
+listmoive:any;
 
-  }
+  constructor(private movieService:MovieService) { }
 getMovieFromService():void{
-  this.movieService.getMovie();
+  console.log("Hello");
+ // debugger;
+ var movieList = this.movieService.getMovie();
+  console.log ( "List of movie " , movieList);
 }
-  ngOnInit() {
+ ngOnInit() {
     this.getMovieFromService();
   }
 
