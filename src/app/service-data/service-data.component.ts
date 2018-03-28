@@ -10,6 +10,7 @@ import{Movie} from '../models/movies';
 export class ServiceDataComponent implements OnInit {
 movies:Movie[];
 listmoive:any;
+jsonmovies:any;
 
   constructor(private movieService:MovieService) { }
 getMovieFromService():void{
@@ -17,9 +18,12 @@ getMovieFromService():void{
  // debugger;
  var movieList = this.movieService.getMovie();
   console.log ( "List of movie " , movieList);
+  
 }
  ngOnInit() {
     this.getMovieFromService();
+    console.log (this.movieService.getHalfMovie()
+    .subscribe(data => this.jsonmovies = data));
   }
 
 }

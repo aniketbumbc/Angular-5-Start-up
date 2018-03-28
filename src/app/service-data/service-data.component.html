@@ -4,6 +4,4 @@
 
 <button (click)="getMovieFromService()">Get Movies</button>
 
-<ul>
-  <li *ngFor="let yahoo of movies"> {{yahoo.name}}</li>
-</ul>
+<p>{{movieList|json}}</p>
